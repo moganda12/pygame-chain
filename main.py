@@ -15,7 +15,7 @@ see_recpticle = dipay.set_mode((width, hite))
 
 while True:
     for event in pygame.event.get() :
-        if event == pygame.QUIT :
+        if event.type == pygame.QUIT :
             pygame.quit()
             exit()
 
