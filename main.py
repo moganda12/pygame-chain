@@ -1,5 +1,6 @@
-import pygame, sys
+import pygame
 from pygame import QUIT
+from sys import exit
 
 pygame.init() #begins pygame
 
@@ -14,5 +15,6 @@ while True:
     for event in pygame.event.get() :
         if event == pygame.QUIT :
             pygame.quit()
+            exit()
 
     dipay.update()
