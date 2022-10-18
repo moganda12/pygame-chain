@@ -6,6 +6,8 @@ pygame.init() #begins pygame
 
 dipay = pygame.display
 
+dipay.set_caption('pygame_chain')
+
 width = 800
 hite = 400
 
