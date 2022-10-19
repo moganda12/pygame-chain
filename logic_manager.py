@@ -1,6 +1,7 @@
-import main
-
 class Sprite :
+    def __init__(self, see_force) :
+        self.eye_chanell = see_force
+
     showList = []
     hideList = []
 
@@ -12,4 +13,4 @@ class Sprite :
 
     def update(self) :
         for surface in self.showList :
-            main.see_recepticle.blit(surface.name, surface.coord) 
+            self.eye_chanell.blit(surface.name, surface.coord) 

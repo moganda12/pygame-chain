@@ -22,6 +22,8 @@ hite = 550
 
 see_recpticle = dipay.set_mode((width, hite))
 
+sprite = logic_manager.Sprite(see_recpticle)
+
 Babys_first_surface.fill('Red')
 
 frame = 0
@@ -33,11 +35,11 @@ while True:
             exit()
 
     if frame == 0 :
-        logic_manager.Sprite.show(Babys_first_surface, (0,0))
-        logic_manager.Sprite.show(image_surface, (100, 0))
-        logic_manager.Sprite.show(text_suface, (280, 0))
+        sprite.show(Babys_first_surface, (0,0))
+        sprite.show(image_surface, (100, 0))
+        sprite.show(text_suface, (280, 0))
 
-    logic_manager.Sprite.update
+    sprite.update
     frame += 1
     dipay.update()
     frameMaxim.tick(60)
