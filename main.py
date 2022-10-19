@@ -25,7 +25,7 @@ while True:
             pygame.quit()
             exit()
 
-    see_recpticle.blit(Babys_first_surface,())
+    see_recpticle.blit(Babys_first_surface,(0,0))
 
     dipay.update()
     frameMaxim.tick(60)
