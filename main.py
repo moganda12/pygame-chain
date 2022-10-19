@@ -37,6 +37,7 @@ while True:
         logic_manager.Sprite.show(image_surface, (100, 0))
         logic_manager.Sprite.show(text_suface, (280, 0))
 
+    logic_manager.Sprite.update
     frame += 1
     dipay.update()
     frameMaxim.tick(60)
