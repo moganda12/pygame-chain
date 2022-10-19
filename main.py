@@ -14,7 +14,7 @@ font = pygame.font.Font('Pixeltype.tff' , 20)
 
 Babys_first_surface = pygame.Surface((100,200))
 image_surface = pygame.image.load('seal.jpeg')
-text_suface = font.render('n0o', AA, color)
+text_suface = font.render('n0o', False, 'Green')
 
 width = 1100
 hite = 550
@@ -31,7 +31,7 @@ while True:
 
     see_recpticle.blit(Babys_first_surface, (0,0))
     see_recpticle.blit(image_surface, (200,0))
-    see_recpticle.blit(, (380,0))
+    see_recpticle.blit(text_suface, (380,0))
 
     dipay.update()
     frameMaxim.tick(60)
