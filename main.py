@@ -35,7 +35,7 @@ while True:
             exit()
 
     if frame == 0 :
-        see_recpticle.bilt(Babys_first_surface, (0,0))
+        see_recpticle.blit(Babys_first_surface, (0,0))
         see_recpticle.blit(image_surface, (100, 0))
         see_recpticle.blit(text_suface, (280, 0))
 
