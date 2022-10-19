@@ -1,14 +1,13 @@
 class Sprite :
     def __init__(self, see_force) :
         self.eye_chanell = see_force
-
-    showList = []
-    hideList = []
+        self.showList = []
+        self.hideList = []
 
     def show(self, name, coord) :
-        Surface = None
-        Surface.name = name
-        Surface.coord = coord
+        self.Surface = None
+        self.Surface.name = name
+        self.Surface.coord = coord
         self.showList.append(Surface)
 
     def update(self) :
