@@ -5,7 +5,7 @@ class Sprite :
         self.hideList = []
 
     def show(self, name, coord) :
-        self.Surface = None
+        self.Surface = 'hi'
         self.Surface.name = name
         self.Surface.coord = coord
         self.showList.append(self.Surface)

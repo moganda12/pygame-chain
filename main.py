@@ -35,9 +35,9 @@ while True:
             exit()
 
     if frame == 0 :
-        sprite.show(Babys_first_surface, (0,0))
-        sprite.show(image_surface, (100, 0))
-        sprite.show(text_suface, (280, 0))
+        see_recpticle.bilt(Babys_first_surface, (0,0))
+        see_recpticle.blit(image_surface, (100, 0))
+        see_recpticle.blit(text_suface, (280, 0))
 
     sprite.update
     frame += 1
