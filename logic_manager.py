@@ -8,7 +8,7 @@ class Sprite :
         self.Surface = None
         self.Surface.name = name
         self.Surface.coord = coord
-        self.showList.append(Surface)
+        self.showList.append(self.Surface)
 
     def update(self) :
         for surface in self.showList :
