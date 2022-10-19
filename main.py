@@ -1,3 +1,4 @@
+import logic_manager
 import pygame
 from pygame import QUIT
 from sys import exit
