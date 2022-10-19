@@ -8,10 +8,16 @@ dipay = pygame.display
 
 dipay.set_caption('pygame_chain')
 
-width = 800
-hite = 400
+frameMaxim = pygame.time.Clock()
+
+Babys_first_surface = pygame.Surface((100,200))
+
+width = 1600
+hite = 800
 
 see_recpticle = dipay.set_mode((width, hite))
+
+Babys_first_surface.fill('Red')
 
 while True:
     for event in pygame.event.get() :
@@ -19,4 +25,7 @@ while True:
             pygame.quit()
             exit()
 
+    see_recpticle.blit(Babys_first_surface,())
+
     dipay.update()
+    frameMaxim.tick(60)
