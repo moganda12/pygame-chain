@@ -24,15 +24,19 @@ see_recpticle = dipay.set_mode((width, hite))
 
 Babys_first_surface.fill('Red')
 
+frame = 0
+
 while True:
     for event in pygame.event.get() :
         if event.type == pygame.QUIT :
             pygame.quit()
             exit()
 
-    see_recpticle.blit(Babys_first_surface, (0,0))
-    see_recpticle.blit(image_surface, (200,0))
-    see_recpticle.blit(text_suface, (380,0))
+    if frame == 0 :
+        logic_manager.Sprite.show(Babys_first_surface, (0,0))
+        logic_manager.Sprite.show(image_surface, (100, 0))
+        logic_manager.Sprite.show(text_suface, (280, 0))
 
+    frame += 1
     dipay.update()
     frameMaxim.tick(60)
