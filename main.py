@@ -12,8 +12,8 @@ frameMaxim = pygame.time.Clock()
 
 Babys_first_surface = pygame.Surface((100,200))
 
-width = 1600
-hite = 800
+width = 1100
+hite = 550
 
 see_recpticle = dipay.set_mode((width, hite))
 
