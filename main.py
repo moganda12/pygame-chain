@@ -10,7 +10,7 @@ dipay.set_caption('pygame_chain')
 
 frameMaxim = pygame.time.Clock()
 
-font = pygame.font.Font('Pixeltype.tff' , 20)
+font = pygame.font.Font('Pixeltype.ttf' , 20)
 
 Babys_first_surface = pygame.Surface((100,200))
 image_surface = pygame.image.load('seal.jpeg')
