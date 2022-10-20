@@ -53,7 +53,7 @@ while True:
     sealY += 4
 
     if testOnTheSeal.get_rect().colliderect(groundCollider) == 1 :
-        testX -= 4
+        sealY -= 4
 
     if testOnTheSeal.get_rect().right >= 800 :
         testX = 0
