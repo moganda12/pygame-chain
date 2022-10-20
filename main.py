@@ -44,11 +44,9 @@ while True:
     if testX > 800 :
         testX = 0
 
-    
-    dipay.flip()
-    see_recpticle.blit(testOnTheSeal, (testX, 120))
     see_recpticle.blit(ground, (0, 300))
     see_recpticle.blit(sky, (0, 0))
+    see_recpticle.blit(testOnTheSeal, (testX, 120))
 
 
     frame += 1
