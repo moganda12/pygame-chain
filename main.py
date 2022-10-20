@@ -1,3 +1,4 @@
+import types
 import logic_manager
 import pygame
 from pygame import QUIT
@@ -10,7 +11,7 @@ def image_make(imagePath) :
 
 dipay = pygame.display
 
-dipay.set_caption('pygame_chain')
+dipay.set_caption('  pygame_chain')
 
 frameMaxim = pygame.time.Clock()
 
@@ -41,9 +42,12 @@ while True:
             pygame.quit()
             exit()
 
-    see_recpticle.blit(testOnTheSeal, (testX, 480))
-
     testX += 1
+
+    if testX > 800 :
+        testX = 0
+
+    see_recpticle.blit(testOnTheSeal, (testX, 480))
 
     frame += 1
     dipay.update()
