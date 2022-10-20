@@ -52,7 +52,7 @@ while True:
     testX += 1
     sealY += 4
 
-    if testOnTheSeal.get_rect().colliderect(groundCollider) == 1 :
+    if sealY >= 300 :
         sealY -= 4
         print('YOU KILLED A HARP SEAL PUP!')
 
