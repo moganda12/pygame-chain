@@ -25,14 +25,14 @@ sprite = logic_manager.Sprite(see_recpticle)
 
 frame = 0
 
+see_recpticle.blit(ground, (0, 300))
+see_recpticle.blit(sky, (0, 0))
+
 while True:
     for event in pygame.event.get() :
         if event.type == pygame.QUIT :
             pygame.quit()
             exit()
-
-    see_recpticle.blit(ground, (0, 300))
-    see_recpticle.blit(sky, (0, 0))
 
     sprite.update
     frame += 1
