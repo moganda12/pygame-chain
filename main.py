@@ -15,9 +15,13 @@ hite = 400
 
 see_recpticle = dipay.set_mode((width, hite))
 
-def image_make(imagePath) :
-    return pygame.image.load(imagePath).convert_alpha()
+def image_make(imagePath, pos) :
+    img = pygame.image.load(imagePath).convert_alpha()
+    return img
 
+
+def placeRectBottom(surf, bottomPos) :
+    see_recpticle.blit(surf, surf.get_rect(midbottom = bottomPos))
 
 frameMaxim = pygame.time.Clock()
 
@@ -48,7 +52,7 @@ while True:
 
     see_recpticle.blit(ground, (0, 300))
     see_recpticle.blit(sky, (0, 0))
-    see_recpticle.blit(testOnTheSeal, (testX, 180))
+    placeRectBottom(testOnTheSeal, (testX, 300))
 
 
     frame += 1
