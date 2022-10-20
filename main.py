@@ -15,9 +15,12 @@ hite = 400
 
 see_recpticle = dipay.set_mode((width, hite))
 
-def image_make(imagePath) :
+def image_make(imagePath, collider = False ,pos = None) :
     img = pygame.image.load(imagePath).convert_alpha()
-    return img
+    imgRect = None
+    if collider :
+        imgRect = img.get_rect(topleft = pos)
+    return img, imgRect
 
 
 def placeRectBottom(surf, bottomPos) :
@@ -29,7 +32,7 @@ font = pygame.font.Font('Pixeltype.ttf' , 20)
 
 testOnTheSeal = image_make('seal.jpeg')
 
-ground = image_make('ground.png')
+ground, groundCollider = image_make('ground.png', True, (0, 300))
 sky = image_make('Sky.png')
 
 
