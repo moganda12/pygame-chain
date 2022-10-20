@@ -47,7 +47,7 @@ while True:
     if testX > 800 :
         testX = 0
 
-    see_recpticle.blit(testOnTheSeal, (testX, 480))
+    see_recpticle.blit(testOnTheSeal, (testX, 120))
 
     frame += 1
     dipay.update()
