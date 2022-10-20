@@ -13,18 +13,15 @@ frameMaxim = pygame.time.Clock()
 
 font = pygame.font.Font('Pixeltype.ttf' , 20)
 
-Babys_first_surface = pygame.Surface((100,200))
-image_surface = pygame.image.load('seal.jpeg')
-text_suface = font.render('n0o', False, 'Green')
+ground = pygame.image.load('ground.png')
+sky = pygame.image.load('Sky.png')
 
-width = 1100
-hite = 550
+width = 800
+hite = 400
 
 see_recpticle = dipay.set_mode((width, hite))
 
 sprite = logic_manager.Sprite(see_recpticle)
-
-Babys_first_surface.fill('Red')
 
 frame = 0
 
@@ -34,10 +31,8 @@ while True:
             pygame.quit()
             exit()
 
-    if frame == 0 :
-        see_recpticle.blit(Babys_first_surface, (0,0))
-        see_recpticle.blit(image_surface, (100, 0))
-        see_recpticle.blit(text_suface, (280, 0))
+    see_recpticle.blit(ground, (0, 300))
+    see_recpticle.blit(sky, (0, 0))
 
     sprite.update
     frame += 1

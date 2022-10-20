@@ -5,11 +5,11 @@ class Sprite :
         self.hideList = []
 
     def show(self, name, coord) :
-        self.Surface = 'hi'
-        self.Surface.name = name
-        self.Surface.coord = coord
+        self.Surface = {name:None, coord:None}
+        self.Surface[name] = name
+        self.Surface[coord] = coord
         self.showList.append(self.Surface)
 
     def update(self) :
         for surface in self.showList :
-            self.eye_chanell.blit(surface.name, surface.coord) 
+            self.eye_chanell.blit(surface[name], surface[coord]) 
