@@ -54,6 +54,7 @@ while True:
 
     if sealY >= 300 :
         sealY -= 4
+        sealY = 300
         print('YOU KILLED A HARP SEAL PUP!')
 
     if testOnTheSeal.get_rect().right >= 800 :
