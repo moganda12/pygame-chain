@@ -43,7 +43,7 @@ while True:
 
     see_recpticle.blit(testOnTheSeal, (testX, 480))
 
-    testX =+ 1
+    testX += 1
 
     frame += 1
     dipay.update()
