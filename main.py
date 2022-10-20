@@ -54,6 +54,7 @@ while True:
 
     if testOnTheSeal.get_rect().colliderect(groundCollider) == 1 :
         sealY -= 4
+        print('YOU KILLED A HARP SEAL PUP!')
 
     if testOnTheSeal.get_rect().right >= 800 :
         testX = 0
