@@ -17,7 +17,7 @@ see_recpticle = dipay.set_mode((width, hite))
 
 def image_make(imagePath) :
     img = pygame.image.load(imagePath).convert_alpha()
-    return img, imgRect
+    return img
 
 def collider_make(surf, pos) :
     return surf.get_rect(topleft = pos)
