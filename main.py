@@ -34,7 +34,6 @@ frame = 0
 testX = 0
 
 while True:
-    dipay.flip()
     for event in pygame.event.get() :
         if event.type == pygame.QUIT :
             pygame.quit()
@@ -45,6 +44,8 @@ while True:
     if testX > 800 :
         testX = 0
 
+    
+    dipay.flip()
     see_recpticle.blit(testOnTheSeal, (testX, 120))
     see_recpticle.blit(ground, (0, 300))
     see_recpticle.blit(sky, (0, 0))
