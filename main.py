@@ -41,6 +41,7 @@ sprite = logic_manager.Sprite(see_recpticle)
 frame = 0
 
 testX = 0
+sealY = 0
 
 while True:
     for event in pygame.event.get() :
@@ -49,13 +50,19 @@ while True:
             exit()
 
     testX += 1
+    sealY += 4
 
-    if testX > 800 :
+    if testOnTheSeal.get_rect().colliderrect(groundCollider) :
+        testX -= 4
+
+    if testOnTheSeal.get_rect().right >= 800 :
         testX = 0
 
+
+    
     see_recpticle.blit(ground, (0, 300))
     see_recpticle.blit(sky, (0, 0))
-    placeRectBottom(testOnTheSeal, (testX, 300))
+    placeRectBottom(testOnTheSeal, (testX, sealY))
 
 
     frame += 1
