@@ -30,6 +30,8 @@ sprite = logic_manager.Sprite(see_recpticle)
 
 frame = 0
 
+testY = 0
+
 see_recpticle.blit(ground, (0, 300))
 see_recpticle.blit(sky, (0, 0))
 
@@ -39,7 +41,10 @@ while True:
             pygame.quit()
             exit()
 
-    sprite.update
+    see_recpticle.blit(testOnTheSeal, (480, testY))
+
+    testY =+ 1
+
     frame += 1
     dipay.update()
     frameMaxim.tick(60)
