@@ -5,6 +5,9 @@ from sys import exit
 
 pygame.init() #begins pygame
 
+def image_make(imagePath) :
+    return pygame.image.load(imagePath)
+
 dipay = pygame.display
 
 dipay.set_caption('pygame_chain')
@@ -13,8 +16,10 @@ frameMaxim = pygame.time.Clock()
 
 font = pygame.font.Font('Pixeltype.ttf' , 20)
 
-ground = pygame.image.load('ground.png')
-sky = pygame.image.load('Sky.png')
+testOnTheSeal = image_make('seal.jpeg')
+
+ground = image_make('ground.png')
+sky = image_make('Sky.png')
 
 width = 800
 hite = 400
