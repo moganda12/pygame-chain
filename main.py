@@ -10,6 +10,9 @@ dipay = pygame.display
 
 dipay.set_caption('  pygame_chain')
 
+width = 800
+hite = 400
+
 see_recpticle = dipay.set_mode((width, hite))
 
 def image_make(imagePath) :
@@ -25,8 +28,6 @@ testOnTheSeal = image_make('seal.jpeg')
 ground = image_make('ground.png')
 sky = image_make('Sky.png')
 
-width = 800
-hite = 400
 
 sprite = logic_manager.Sprite(see_recpticle)
 
