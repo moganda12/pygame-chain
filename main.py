@@ -6,12 +6,15 @@ from sys import exit
 
 pygame.init() #begins pygame
 
-def image_make(imagePath) :
-    return pygame.image.load(imagePath).convert_alpha()
-
 dipay = pygame.display
 
 dipay.set_caption('  pygame_chain')
+
+see_recpticle = dipay.set_mode((width, hite))
+
+def image_make(imagePath) :
+    return pygame.image.load(imagePath).convert_alpha()
+
 
 frameMaxim = pygame.time.Clock()
 
@@ -24,8 +27,6 @@ sky = image_make('Sky.png')
 
 width = 800
 hite = 400
-
-see_recpticle = dipay.set_mode((width, hite))
 
 sprite = logic_manager.Sprite(see_recpticle)
 
