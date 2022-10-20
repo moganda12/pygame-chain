@@ -7,7 +7,7 @@ from sys import exit
 pygame.init() #begins pygame
 
 def image_make(imagePath) :
-    return pygame.image.load(imagePath)
+    return pygame.image.load(imagePath).convert_alpha()
 
 dipay = pygame.display
 
@@ -46,7 +46,7 @@ while True:
 
     see_recpticle.blit(ground, (0, 300))
     see_recpticle.blit(sky, (0, 0))
-    see_recpticle.blit(testOnTheSeal, (testX, 120))
+    see_recpticle.blit(testOnTheSeal, (testX, 180))
 
 
     frame += 1
